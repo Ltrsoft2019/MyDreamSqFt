@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <RelativeLayout
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_dialog">
+
+        <LinearLayout
+            android:id="@+id/layoutHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select City"
+                android:textColor="@color/primary"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rdoGrpCity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layoutHeading"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/primary"
+                android:foregroundTint="@color/primary"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:text="Latur"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:buttonTint="@color/primary"
+                android:paddingStart="10dp"
+                android:text="Pune"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/primary"
+                android:textColor="@color/black"
+                android:paddingStart="10dp"
+                android:text="Nanded"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:buttonTint="@color/primary"
+                android:paddingStart="10dp"
+                android:text="Aurangabad"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>

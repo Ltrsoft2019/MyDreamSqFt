@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llFlat"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:text="Flat"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/border_purple"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/layoutFlatOneBhk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbFlatOneBhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:checked="true"
+                android:text="1 BHK"
+                android:textColor="@color/purple_dark"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutFlatTwoBhk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbFlatTwoBhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="2 BHK"
+                android:textColor="@color/purple_dark"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutFlatThreeBhk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbFlatThreeBhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="3 BHK"
+                android:textColor="@color/purple_dark"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutFlatMore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cbFlatMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="More"
+                android:textColor="@color/purple_dark"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlat1BHK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/grad_3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="1 BHK"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCountFlat1BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_state"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Enter Flat Count"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCarpetAreaFlat1BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Carpet Area [In Sq ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBuiltUpAreaFlat1BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Built Up Area [In Sq Ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtExpectedPriceFlat1BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_rupee"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Builder Expected Price"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAddress">
+
+                <TextView
+                    android:id="@+id/tvStartDateFlat1BHK"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Start Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvEndDateFlat1BHK"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="End Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlat2BHK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/grad_3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="2 BHK"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCountFlat2BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_state"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Enter Flat Count"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCarpetAreaFlat2BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Carpet Area [In Sq ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBuiltUpAreaFlat2BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Built Up Area [In Sq Ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtExpectedAreaFlat2BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_rupee"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Builder Expected Price"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAddress">
+
+                <TextView
+                    android:id="@+id/tvStartDateFlat2BHK"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Start Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvEndDateFlat2BHK"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="End Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlat3BHK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/grad_3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="3 BHK"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCountFlat3BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_state"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Enter Flat Count"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCarpetAreaFlat3BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Carpet Area [In Sq ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBuiltUpAreaFlat3BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Built Up Area [In Sq Ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtExpectedAreaFlat3BHK"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_rupee"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Builder Expected Price"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAddress">
+
+                <TextView
+                    android:id="@+id/tvStartDateFlat3BHK"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Start Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvEndDateFlat3BHK"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="End Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFlatMore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/grad_3"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFlatHeadingMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="4 BHK"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCountFlatMore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_state"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Enter Flat Count"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCarpetAreaFlatMore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Carpet Area [In Sq ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtBuiltUpAreaFlatMore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_area"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Built Up Area [In Sq Ft]"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtExpectedAreaFlatMore"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/border_input"
+                android:drawableStart="@drawable/custom_rupee"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:hint="Builder Expected Price"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingStart="12dp"
+                android:textColor="@color/purple_dark"
+                android:textColorHint="@color/grey"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtAddress">
+
+                <TextView
+                    android:id="@+id/tvStartDateFlatMore"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Start Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvEndDateFlatMore"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_input"
+                    android:drawableStart="@drawable/custom_calendar"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="End Date"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/purple_dark"
+                    android:textColorHint="@color/grey"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAddress">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBackFlat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_purple"
+            android:text="Back" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNextFlat"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_purple"
+            android:text="Next" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

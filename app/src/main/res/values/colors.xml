@@ -1,5 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="primary_light">#E1BEE7</color>
+    <color name="primary">#5F0685</color>
+    <color name="primary_dark">#41065A</color>
+    <color name="accent">#FFC107</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="grey">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
     <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#E31010</color>
+    <color name="grey_light">#ECEBEB</color>
+    <color name="purple_dark">#41065A</color>
+    <color name="white_hint">#BDBABA</color>
+
+    <color name="grad_1">#9F06E1</color>
+    <color name="grad_2">#AE2EE4</color>
+    <color name="grad_3">#773593</color>
+
+    <color name="seek_bar_background">#ababab</color>
+    <color name="seek_bar_progress">#ffb600</color>
+    <color name="seek_bar_secondary_progress">#3399CC</color>
 </resources>

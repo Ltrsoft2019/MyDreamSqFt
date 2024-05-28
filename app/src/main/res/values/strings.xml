@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">MyDreamSqFt</string>
+    <string name="app_name">MyDreamSqFeet</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maintenance_charges">Maintenance Charges</string>
+    <string name="other">Other</string>
+    <string name="retail_use">Retail Use</string>
+    <string name="expected_deposit">Expected Deposit</string>
+    <string name="expected_rent">Expected Rent</string>
+    <string name="duration">Duration</string>
+    <string name="expected_price">Expected Price</string>
+    <string name="mydreamsqft">MyDreamSqFt</string>
+    <string name="what_to_sell">What To Sell</string>
+    <string name="built_up_area_in_sq_ft">Built Up Area [In Sq Ft]</string>
+    <string name="shop_amenities">Shop Amenities</string>
 </resources>
