@@ -1,15 +1,13 @@
 package com.ltrsoft.mydreamsqft.app.data.models;
 
-public class BorrowHouseRequest {
+public class BuyHouseRequest {
 
 
     private int state_id;
     private int district_id;
     private int city_id;
-
     private String address;
-    private String what_to_borrow;
-    private String borrow_house_on;
+    private String what_to_buy;
     private String type;
     private String house_should_be;
     private String min_price;
@@ -19,10 +17,6 @@ public class BorrowHouseRequest {
     private String gallery;
     private String no_of_bathroom;
     private String no_of_toilet;
-    private String borrow_duration;
-    private String willing_to_give_deposit;
-    private String total_person_staying;
-    private String purpose_to_stay;
     private String other_details;
 
 
@@ -58,20 +52,12 @@ public class BorrowHouseRequest {
         this.address = address;
     }
 
-    public String getWhat_to_borrow() {
-        return what_to_borrow;
+    public String getWhat_to_buy() {
+        return what_to_buy;
     }
 
-    public void setWhat_to_borrow(String what_to_borrow) {
-        this.what_to_borrow = what_to_borrow;
-    }
-
-    public String getBorrow_house_on() {
-        return borrow_house_on;
-    }
-
-    public void setBorrow_house_on(String borrow_house_on) {
-        this.borrow_house_on = borrow_house_on;
+    public void setWhat_to_buy(String what_to_buy) {
+        this.what_to_buy = what_to_buy;
     }
 
     public String getType() {
@@ -144,38 +130,6 @@ public class BorrowHouseRequest {
 
     public void setNo_of_toilet(String no_of_toilet) {
         this.no_of_toilet = no_of_toilet;
-    }
-
-    public String getBorrow_duration() {
-        return borrow_duration;
-    }
-
-    public void setBorrow_duration(String borrow_duration) {
-        this.borrow_duration = borrow_duration;
-    }
-
-    public String getWilling_to_give_deposit() {
-        return willing_to_give_deposit;
-    }
-
-    public void setWilling_to_give_deposit(String willing_to_give_deposit) {
-        this.willing_to_give_deposit = willing_to_give_deposit;
-    }
-
-    public String getTotal_person_staying() {
-        return total_person_staying;
-    }
-
-    public void setTotal_person_staying(String total_person_staying) {
-        this.total_person_staying = total_person_staying;
-    }
-
-    public String getPurpose_to_stay() {
-        return purpose_to_stay;
-    }
-
-    public void setPurpose_to_stay(String purpose_to_stay) {
-        this.purpose_to_stay = purpose_to_stay;
     }
 
     public String getOther_details() {

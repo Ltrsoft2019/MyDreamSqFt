@@ -1,28 +1,32 @@
 package com.ltrsoft.mydreamsqft.app.data.models;
 
-public class BorrowHouseRequest {
-
+public class LendHouseRequest {
 
     private int state_id;
     private int district_id;
     private int city_id;
-
     private String address;
-    private String what_to_borrow;
-    private String borrow_house_on;
+    private String lend_house_on;
+    private String what_to_buy;
     private String type;
     private String house_should_be;
+    private String total_area;
+    private String carpet_area;
+    private String floor_no;
+    private String total_floor;
     private String min_price;
     private String max_price;
+    private String min_deposit;
+    private String max_deposit;
     private String parking;
+    private String parking_for;
+    private String parking_is;
     private String lift;
     private String gallery;
     private String no_of_bathroom;
     private String no_of_toilet;
-    private String borrow_duration;
-    private String willing_to_give_deposit;
-    private String total_person_staying;
-    private String purpose_to_stay;
+    private String no_of_attached_bathroom;
+    private String maintenance;
     private String other_details;
 
 
@@ -58,20 +62,20 @@ public class BorrowHouseRequest {
         this.address = address;
     }
 
-    public String getWhat_to_borrow() {
-        return what_to_borrow;
+    public String getLend_house_on() {
+        return lend_house_on;
     }
 
-    public void setWhat_to_borrow(String what_to_borrow) {
-        this.what_to_borrow = what_to_borrow;
+    public void setLend_house_on(String lend_house_on) {
+        this.lend_house_on = lend_house_on;
     }
 
-    public String getBorrow_house_on() {
-        return borrow_house_on;
+    public String getWhat_to_buy() {
+        return what_to_buy;
     }
 
-    public void setBorrow_house_on(String borrow_house_on) {
-        this.borrow_house_on = borrow_house_on;
+    public void setWhat_to_buy(String what_to_buy) {
+        this.what_to_buy = what_to_buy;
     }
 
     public String getType() {
@@ -90,6 +94,38 @@ public class BorrowHouseRequest {
         this.house_should_be = house_should_be;
     }
 
+    public String getTotal_area() {
+        return total_area;
+    }
+
+    public void setTotal_area(String total_area) {
+        this.total_area = total_area;
+    }
+
+    public String getCarpet_area() {
+        return carpet_area;
+    }
+
+    public void setCarpet_area(String carpet_area) {
+        this.carpet_area = carpet_area;
+    }
+
+    public String getFloor_no() {
+        return floor_no;
+    }
+
+    public void setFloor_no(String floor_no) {
+        this.floor_no = floor_no;
+    }
+
+    public String getTotal_floor() {
+        return total_floor;
+    }
+
+    public void setTotal_floor(String total_floor) {
+        this.total_floor = total_floor;
+    }
+
     public String getMin_price() {
         return min_price;
     }
@@ -106,12 +142,44 @@ public class BorrowHouseRequest {
         this.max_price = max_price;
     }
 
+    public String getMin_deposit() {
+        return min_deposit;
+    }
+
+    public void setMin_deposit(String min_deposit) {
+        this.min_deposit = min_deposit;
+    }
+
+    public String getMax_deposit() {
+        return max_deposit;
+    }
+
+    public void setMax_deposit(String max_deposit) {
+        this.max_deposit = max_deposit;
+    }
+
     public String getParking() {
         return parking;
     }
 
     public void setParking(String parking) {
         this.parking = parking;
+    }
+
+    public String getParking_for() {
+        return parking_for;
+    }
+
+    public void setParking_for(String parking_for) {
+        this.parking_for = parking_for;
+    }
+
+    public String getParking_is() {
+        return parking_is;
+    }
+
+    public void setParking_is(String parking_is) {
+        this.parking_is = parking_is;
     }
 
     public String getLift() {
@@ -146,36 +214,20 @@ public class BorrowHouseRequest {
         this.no_of_toilet = no_of_toilet;
     }
 
-    public String getBorrow_duration() {
-        return borrow_duration;
+    public String getNo_of_attached_bathroom() {
+        return no_of_attached_bathroom;
     }
 
-    public void setBorrow_duration(String borrow_duration) {
-        this.borrow_duration = borrow_duration;
+    public void setNo_of_attached_bathroom(String no_of_attached_bathroom) {
+        this.no_of_attached_bathroom = no_of_attached_bathroom;
     }
 
-    public String getWilling_to_give_deposit() {
-        return willing_to_give_deposit;
+    public String getMaintainance() {
+        return maintenance;
     }
 
-    public void setWilling_to_give_deposit(String willing_to_give_deposit) {
-        this.willing_to_give_deposit = willing_to_give_deposit;
-    }
-
-    public String getTotal_person_staying() {
-        return total_person_staying;
-    }
-
-    public void setTotal_person_staying(String total_person_staying) {
-        this.total_person_staying = total_person_staying;
-    }
-
-    public String getPurpose_to_stay() {
-        return purpose_to_stay;
-    }
-
-    public void setPurpose_to_stay(String purpose_to_stay) {
-        this.purpose_to_stay = purpose_to_stay;
+    public void setMaintainance(String maintainance) {
+        this.maintenance = maintainance;
     }
 
     public String getOther_details() {
