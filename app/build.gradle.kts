@@ -5,12 +5,16 @@ plugins {
     id("com.google.dagger.hilt.android")
     kotlin("android")
     kotlin("kapt")
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace = "com.ltrsoft.mydreamsqft"
     compileSdk = 34
-
+    buildFeatures{
+        viewBinding = true
+        dataBinding = true
+    }
     defaultConfig {
         applicationId = "com.ltrsoft.mydreamsqft"
         minSdk = 23
@@ -42,6 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

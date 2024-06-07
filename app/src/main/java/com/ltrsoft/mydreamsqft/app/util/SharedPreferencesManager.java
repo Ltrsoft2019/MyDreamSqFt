@@ -14,13 +14,6 @@ public class SharedPreferencesManager {
         this.context = context;
     }
 
-    public synchronized static SharedPreferencesManager getInstance(Context context) {
-        if (sharedPreferencesManager == null)
-            sharedPreferencesManager = new SharedPreferencesManager(context.getApplicationContext());
-        return sharedPreferencesManager;
-    }
-
-
     public void saveBoolean(final String key, final boolean data) {
         final SharedPreferences sharedPreferences = context.getSharedPreferences(APP_INFO, Context.MODE_PRIVATE);
         final SharedPreferences.Editor editor = sharedPreferences.edit();

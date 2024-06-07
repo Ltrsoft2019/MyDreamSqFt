@@ -6,6 +6,8 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.widget.Toast;
 
+import dagger.hilt.android.qualifiers.ApplicationContext;
+
 public class Util {
 
     public static String TERM_AND_CONDITION = "https://ltr-soft.com/dreamsqft/tnc";

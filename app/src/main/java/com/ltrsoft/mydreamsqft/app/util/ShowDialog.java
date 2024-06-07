@@ -61,33 +61,33 @@ public class ShowDialog {
         }
 
 
-        rdoGrpState.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                RadioButton radioButton = (RadioButton) group.findViewById(checkedId);
-                String strText = radioButton.getText().toString().trim();
-                if (dialogType.equalsIgnoreCase("State")) {
-                    ((BaseActivity) context).callGetDistAPI(context, new TaskComplete() {
-                        @Override
-                        public void onTaskFinished(List<GetResponse.Response> response) {
-//                            listener.onOptionOptionSelected(checkedId, strText,response);
-
-                        }
-                    }, checkedId);
-                } else if (dialogType.equalsIgnoreCase("Dist")) {
-                    ((BaseActivity) context).callGetCitiesAPI(context, new TaskComplete() {
-                        @Override
-                        public void onTaskFinished(List<GetResponse.Response> response) {
-//                            listener.onOptionOptionSelected(checkedId, strText, response);
-                        }
-                    }, checkedId);
-                } else {
-                    listener.onOptionOptionSelected(checkedId, strText, null);
-                }
-
-                dialog.dismiss();
-            }
-        });
+//        rdoGrpState.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//                RadioButton radioButton = (RadioButton) group.findViewById(checkedId);
+//                String strText = radioButton.getText().toString().trim();
+//                if (dialogType.equalsIgnoreCase("State")) {
+//                    ((BaseActivity) context).callGetDistAPI(context, new TaskComplete() {
+//                        @Override
+//                        public void onTaskFinished(List<GetResponse.Response> response) {
+////                            listener.onOptionOptionSelected(checkedId, strText,response);
+//
+//                        }
+//                    }, checkedId);
+//                } else if (dialogType.equalsIgnoreCase("Dist")) {
+//                    ((BaseActivity) context).callGetCitiesAPI(context, new TaskComplete() {
+//                        @Override
+//                        public void onTaskFinished(List<GetResponse.Response> response) {
+////                            listener.onOptionOptionSelected(checkedId, strText, response);
+//                        }
+//                    }, checkedId);
+//                } else {
+//                    listener.onOptionOptionSelected(checkedId, strText, null);
+//                }
+//
+//                dialog.dismiss();
+//            }
+//        });
     }
 
     private void setButtonAttribute(Context context, AppCompatRadioButton radioButton) {

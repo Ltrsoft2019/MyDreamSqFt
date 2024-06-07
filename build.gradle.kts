@@ -2,6 +2,7 @@
 plugins {
     alias(libs.plugins.android.application) apply false
     id("org.jetbrains.kotlin.kapt") version "1.9.0" apply false
+    alias(libs.plugins.google.gms.google.services) apply false
 }
 buildscript{
     repositories{
